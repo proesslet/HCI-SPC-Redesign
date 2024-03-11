@@ -17,6 +17,10 @@ import { RouterLink, RouterView } from "vue-router";
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="#">SPC Products</RouterLink>
+        <RouterLink to="#">Forecast Tools</RouterLink>
+        <RouterLink to="#">Weather Safety</RouterLink>
+        <RouterLink to="#">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -41,6 +45,7 @@ header h1 {
 header nav a {
   color: var(--white);
   text-decoration: none;
+  margin-left: 1rem;
 }
 
 #titlediv {
