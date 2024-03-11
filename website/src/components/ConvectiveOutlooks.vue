@@ -1,6 +1,16 @@
 <script>
 export default {
   name: "ConvectiveOutlooks",
+  data() {
+    return {
+      selectedDay: 1,
+      severeOutlookImages: [
+        "https://spc.noaa.gov/partners/outlooks/national/swody1.png",
+        "https://spc.noaa.gov/partners/outlooks/national/swody2.png",
+        "https://spc.noaa.gov/partners/outlooks/national/swody3.png",
+      ],
+    };
+  },
 };
 </script>
 
@@ -8,11 +18,11 @@ export default {
   <div id="parent-container">
     <h3>Convective Outlooks</h3>
     <div class="day-selector">
-      <button>Day 1</button>
-      <button>Day 2</button>
-      <button>Day 3</button>
+      <button @click="selectedDay = 1">Day 1</button>
+      <button @click="selectedDay = 2">Day 2</button>
+      <button @click="selectedDay = 3">Day 3</button>
     </div>
-    <img src="/samplemaps/day3otlk_0730.gif" alt="" />
+    <img :src="severeOutlookImages[selectedDay - 1]" alt="" />
   </div>
 </template>
 
@@ -25,6 +35,7 @@ export default {
 #parent-container img {
   border: 1px solid var(--black);
   border-radius: 10px;
+  width: 50rem;
 }
 
 .day-selector {
