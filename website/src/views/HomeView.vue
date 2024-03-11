@@ -1,5 +1,16 @@
-<script setup></script>
+<script>
+import ConvectiveOutlooks from "../components/ConvectiveOutlooks.vue";
+
+export default {
+  name: "HomeView",
+  components: {
+    ConvectiveOutlooks,
+  },
+};
+</script>
 
 <template>
-  <main></main>
+  <main>
+    <ConvectiveOutlooks />
+  </main>
 </template>
