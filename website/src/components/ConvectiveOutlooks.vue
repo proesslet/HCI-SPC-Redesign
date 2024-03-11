@@ -16,7 +16,7 @@ export default {
 
 <template>
   <div id="parent-container">
-    <h3>Convective Outlooks</h3>
+    <h3>Severe Weather Outlooks</h3>
     <div class="day-selector">
       <button @click="selectedDay = 1">Day 1</button>
       <button @click="selectedDay = 2">Day 2</button>
