@@ -10,11 +10,6 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/products",
-      name: "products",
-      component: () => import("../views/SPCProducts.vue"),
-    },
-    {
       path: "/forecast-tools",
       name: "forecast-tools",
       component: () => import("../views/ForecastTools.vue"),
@@ -23,6 +18,31 @@ const router = createRouter({
       path: "/weather-safety",
       name: "weather-safety",
       component: () => import("../views/WeatherSafety.vue"),
+    },
+    {
+      path: "/about",
+      name: "about",
+      component: () => import("../views/About.vue"),
+    },
+    {
+      path: "/md",
+      name: "md",
+      component: () => import("../views/MDPage.vue"),
+    },
+    {
+      path: "/watches",
+      name: "watches",
+      component: () => import("../views/Watches.vue"),
+    },
+    {
+      path: "/thunderstorm-outlooks",
+      name: "thunderstorm-outlooks",
+      component: () => import("../views/ThunderStormOutlooks.vue"),
+    },
+    {
+      path: "/fire-weather",
+      name: "fire-weather",
+      component: () => import("../views/FireWeather.vue"),
     },
   ],
 });

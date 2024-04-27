@@ -13,22 +13,33 @@ export default {
   <main>
     <ConvectiveOutlooks />
     <div id="products-grid">
-      <div>MDs</div>
-      <div>
-        <img src="/tornadowatch.jpg" />
-        <h1>Watches</h1>
-      </div>
+      <RouterLink to="/md">
+        <div>
+          <img src="/md-map.png" />
+          <h1>MDs</h1>
+        </div>
+      </RouterLink>
+      <RouterLink to="/watches">
+        <div>
+          <img src="/tornadowatch.jpg" />
+          <h1>Watches</h1>
+        </div>
+      </RouterLink>
 
-      <div>
-        <img src="/thndrstrmoutlook1.png" />
-        <h1>Thunderstorm Outlooks</h1>
-      </div>
-      <div>
-        <img
-          src="https://www.spc.noaa.gov/partners/outlooks/national/fwody1.png"
-        />
-        <h1>Fire Weather Outlooks</h1>
-      </div>
+      <RouterLink to="thunderstorm-outlooks">
+        <div>
+          <img src="/thndrstrmoutlook1.png" />
+          <h1>Thunderstorm Outlooks</h1>
+        </div> </RouterLink
+      >"
+      <RouterLink to="fire-weather">
+        <div>
+          <img
+            src="https://www.spc.noaa.gov/partners/outlooks/national/fwody1.png"
+          />
+          <h1>Fire Weather Outlooks</h1>
+        </div>
+      </RouterLink>
     </div>
   </main>
 </template>

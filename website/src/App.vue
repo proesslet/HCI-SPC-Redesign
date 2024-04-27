@@ -17,10 +17,21 @@ import { RouterLink, RouterView } from "vue-router";
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="products">SPC Products</RouterLink>
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <RouterLink to="outlooks">Products</RouterLink>
+          <div class="dropdown-content">
+            <RouterLink to="md">Mesoscale</RouterLink>
+            <RouterLink to="watches">Watches</RouterLink>
+            <RouterLink to="thunderstorm-outlooks"
+              >Thunderstorm Outlooks</RouterLink
+            >
+            <RouterLink to="fire-weather">Fire Weather Outlooks</RouterLink>
+          </div>
+        </div>
         <RouterLink to="forecast-tools">Forecast Tools</RouterLink>
         <RouterLink to="weather-safety">Weather Safety</RouterLink>
-        <RouterLink to="#">About</RouterLink>
+        <RouterLink to="about">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -65,4 +76,35 @@ img {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--dark-blue);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--white);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--light-blue);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Active link */
 </style>
