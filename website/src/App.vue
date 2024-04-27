@@ -17,9 +17,9 @@ import { RouterLink, RouterView } from "vue-router";
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="#">SPC Products</RouterLink>
-        <RouterLink to="#">Forecast Tools</RouterLink>
-        <RouterLink to="#">Weather Safety</RouterLink>
+        <RouterLink to="products">SPC Products</RouterLink>
+        <RouterLink to="forecast-tools">Forecast Tools</RouterLink>
+        <RouterLink to="weather-safety">Weather Safety</RouterLink>
         <RouterLink to="#">About</RouterLink>
       </nav>
     </div>

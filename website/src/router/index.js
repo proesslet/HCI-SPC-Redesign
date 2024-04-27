@@ -9,6 +9,21 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
+    {
+      path: "/products",
+      name: "products",
+      component: () => import("../views/SPCProducts.vue"),
+    },
+    {
+      path: "/forecast-tools",
+      name: "forecast-tools",
+      component: () => import("../views/ForecastTools.vue"),
+    },
+    {
+      path: "/weather-safety",
+      name: "weather-safety",
+      component: () => import("../views/WeatherSafety.vue"),
+    },
   ],
 });
 
