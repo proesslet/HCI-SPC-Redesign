@@ -70,6 +70,55 @@ Day 1 Fire Weather Outlook
    Critical area at this time.</pre
         >
       </div>
+
+      <div class="text" v-if="selectedOutlook === 1">
+        <pre style="text-align: start; color: rgb(0, 0, 0); font-size: 10pt">
+Valid 281200Z - 291200Z
+
+The previous forecast (see below) remains on track, with only slight
+modifications made to the ongoing Elevated highlights to reflect the
+latest guidance consensus.
+
+..Squitieri.. 04/27/2024
+
+.PREV DISCUSSION... /ISSUED 0159 AM CDT Sat Apr 27 2024/
+
+...Synopsis...
+Elevated fire weather conditions will be possible Sunday afternoon
+across eastern New Mexico and far western Texas, where a belt of
+increased mid-level flow will be in place with weak surface
+troughing. This will allow for relative humidity reductions to
+around 10-20 percent amid surface winds 10-15 mph (locally as high
+as 20 mph). Fuels in this region will likely see drying on D1
+Saturday, but overall coverage of any Critical winds should remain
+low enough to preclude the need for a Critical delineation at this
+time.</pre
+        >
+      </div>
+
+      <div class="text" v-if="selectedOutlook === 2">
+        <pre style="text-align: start; color: rgb(0, 0, 0); font-size: 10pt">
+Valid 291200Z - 051200Z
+
+Zonal mid-level flow will become established across the CONUS, with
+multiple embedded shortwave troughs expected to traverse the
+northern half of the CONUS for the upcoming week. During the middle
+into late week period, surface lee troughing will encourage dry and
+occasionally breezy conditions across the southern High Plains as a
+surface cold front sweeps across the northern Rockies into the
+Plains.
+
+Guidance consensus shows potential for at least Elevated equivalent
+dry and breezy conditions along/behind the surface cold front across
+the northern High Plains for Day 4 (Tuesday). However, fuels appear
+modestly receptive to fire spread, precluding the addition of
+Critical probabilities at this time. Similarly, Elevated equivalent
+dry/windy conditions may also accompany the post-dryline environment
+over eastern New Mexico into far western Texas. However, questions
+remain this far in advance how strong the post-dryline winds will
+become, with Critical probabilities withheld for now.</pre
+        >
+      </div>
     </div>
   </div>
 </template>
