@@ -48,6 +48,9 @@ export default {
         <button @click="selectedDay = 6">6</button>
         <button @click="selectedDay = 7">7</button>
         <button @click="selectedDay = 8">8</button>
+      </div>
+      <img :src="severeOutlookImages[selectedDay - 1]" alt="" />
+      <div class="bottom-selectors">
         <div v-if="selectedDay <= 2">
           <button @click="">Categorical</button>
           <button @click="">Tornado</button>
@@ -59,7 +62,6 @@ export default {
           <button @click="">Probabilistic</button>
         </div>
       </div>
-      <img :src="severeOutlookImages[selectedDay - 1]" alt="" />
     </div>
 
     <!-- Outlook Discussion -->
@@ -148,7 +150,13 @@ export default {
           gradually decrease with southward/eastward extent.
         </p>
       </div>
-      <p v-if="selectedDay == 2">Day 2</p>
+      <p v-if="selectedDay == 2"></p>
+      <p v-if="selectedDay == 3"></p>
+      <p v-if="selectedDay == 4"></p>
+      <p v-if="selectedDay == 5"></p>
+      <p v-if="selectedDay == 6"></p>
+      <p v-if="selectedDay == 7"></p>
+      <p v-if="selectedDay == 8"></p>
     </div>
   </div>
 </template>
@@ -177,7 +185,7 @@ h1 {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .day-selector button {
@@ -187,6 +195,23 @@ h1 {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.bottom-selectors {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.bottom-selectors button {
+  background-color: var(--light-blue);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem;
+  margin-top: 0;
 }
 
 #active {
