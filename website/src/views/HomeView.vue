@@ -30,8 +30,8 @@ export default {
         <div>
           <img src="/thndrstrmoutlook1.png" />
           <h1>Thunderstorm Outlooks</h1>
-        </div> </RouterLink
-      >"
+        </div>
+      </RouterLink>
       <RouterLink to="fire-weather">
         <div>
           <img
@@ -55,9 +55,11 @@ export default {
 #products-grid div {
   border: 1px solid black;
   width: 325px;
+  height: 200px;
   text-align: center;
   border-radius: 10px;
   position: relative;
+  overflow: hidden;
 }
 
 #products-grid div:hover {
