@@ -57,11 +57,15 @@ npm install
 
 ### Compile and Hot-Reload for Development
 
+This will allow you to run the application locally in your web browser. Once you run this command, it will tell you what port it is running on so that you can access it from localhost.
+
 ```sh
 npm run dev
 ```
 
 ### Compile and Minify for Production
+
+This will compile all javascript into js files to deploy to a server. If you are just wanting to preview the project, or work on development, it is recommended you use the previous command.
 
 ```sh
 npm run build
